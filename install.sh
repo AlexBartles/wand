@@ -52,11 +52,7 @@ read -p "Do you want to run the game when the installation ends? (y/N): " run_ga
 
 
 install_docker_official() {
-    echo "Installing Docker..."
-    curl -fsSL https://get.docker.com -o get-docker.sh
-    sudo sh get-docker.sh
-    sudo systemctl start docker
-    sudo systemctl enable docker
+    echo "Skipping Docker install!"
 }
 
 if [[ $(uname) == "Linux" ]]; then
@@ -111,9 +107,7 @@ if [[ $(uname) == "Linux" ]]; then
 
     # Install Docker Compose for non-Arch systems
     if [[ $PKG_MANAGER != "pacman" ]]; then
-        echo "Installing Docker Compose..."
-        sudo curl -L "https://github.com/docker/compose/releases/download/v2.20.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-        sudo chmod +x /usr/local/bin/docker-compose
+        echo "Skipping Docker Compose install!"
     fi
 
 elif [[ $(uname) == "Darwin" ]]; then
