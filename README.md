@@ -4,7 +4,12 @@ Wand makes it easy to configure dash, houdini and a media server utilizing docke
 
 > [!NOTE]
 > This can also be ran on Windows using WSL.
+
+> [!NOTE]
 > THIS CUSTOM EDIT DOES NOT INSTALL DOCKER OR DOCKER COMPOSE. USE THE OFFICIAL WAND AT https://github.com/solero/wand IF YOU NEED THEM INSTALLED.
+
+> [!NOTE]
+> This custom edit will not get updated! The install pulls from solero/wand so it is always up to date!
 
 ## Installation script
 **Step 1** run the script
