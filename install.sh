@@ -96,8 +96,8 @@ if [[ $(uname) == "Linux" ]]; then
         sudo pacman -Syu --noconfirm
         
         # Install Docker, git, and curl
-        echo "Installing Curl and Git, Docker and Docker Compose..."
-        $INSTALL_CMD docker docker-compose git curl
+        echo "Installing Curl and Git..."
+        $INSTALL_CMD git curl
         sudo systemctl start docker
         sudo systemctl enable docker
     else
