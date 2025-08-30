@@ -4,11 +4,12 @@ Wand makes it easy to configure dash, houdini and a media server utilizing docke
 
 > [!NOTE]
 > This can also be ran on Windows using WSL.
+> THIS CUSTOM EDIT DOES NOT INSTALL DOCKER OR DOCKER COMPOSE. USE THE OFFICIAL WAND AT https://github.com/solero/wand IF YOU NEED THEM INSTALLED.
 
 ## Installation script
 **Step 1** run the script
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/solero/wand/master/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/AlexBartles/wand/master/install.sh)
 ```
 **Step 2** Answer Questions which are:
 * Database password (Leave blank for random password)
@@ -66,7 +67,7 @@ $ systemctl enable docker.service
 
 **Step 2** Clone the repository & submodules
 ```bash
-$ git clone --recurse-submodules https://github.com/solero/wand && cd wand
+$ git clone --recurse-submodules https://github.com/AlexBartles/wand && cd wand
 ```
 
 **Step 3** Edit the config file (optional, default values are fine for a local setup)
