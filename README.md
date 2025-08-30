@@ -67,7 +67,7 @@ $ systemctl enable docker.service
 
 **Step 2** Clone the repository & submodules
 ```bash
-$ git clone --recurse-submodules https://github.com/AlexBartles/wand && cd wand
+$ git clone --recurse-submodules https://github.com/solero/wand && cd wand
 ```
 
 **Step 3** Edit the config file (optional, default values are fine for a local setup)
